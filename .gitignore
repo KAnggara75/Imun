@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+._*
 
 # IntelliJ related
 *.iml
@@ -36,7 +37,6 @@ coverage/
 .pub-cache/
 .flutter-plugins
 .flutter-plugins-dependencies
-lib/generated_plugin_registrant.dart
 
 # Web related
 lib/generated_plugin_registrant.dart
