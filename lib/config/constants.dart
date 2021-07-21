@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
 const kTextColor = Color(0xFFFFFFFF);
-const kPrimaryGradientColor = LinearGradient(
-  begin: Alignment.topLeft,
-  end: Alignment.bottomRight,
-  colors: [Color(0xFFFFA53E), Color(0xFFFF7643)],
-);
+const kPrimaryColor = Color(0xFF06b3fa);
+const kAnimationDuration = Duration(milliseconds: 200);
