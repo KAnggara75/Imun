@@ -1,0 +1,23 @@
+on:
+  push:
+    branches: [ main ]
+name: 🚀 Deploy App on push
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+      - name: Flutter action
+        uses: subosito/flutter-action@v1.5.3
+        with:
+          flutter-version: '2.2.x'
+          channel: 'stable'
+      - run: flutter pub get
+      - run: flutter test
+      - run: flutter build web
+      - run: flutter build apk
+      - run: flutter build appbundle
+      - run: flutter build ios --release --no-codesign
