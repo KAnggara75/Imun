@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import './Dashboard.dart';
+import '../config/constants.dart';
 import '../views/intro/index.dart';
 import '../config/size_config.dart';
-import '../config/constants.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({Key? key}) : super(key: key);
@@ -44,5 +45,9 @@ abstract class IntroController extends State<IntroBody> {
         borderRadius: BorderRadius.circular(3),
       ),
     );
+  }
+
+  next() {
+    Navigator.pushReplacementNamed(context, DashboardScreen.routeName);
   }
 }

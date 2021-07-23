@@ -47,6 +47,14 @@ class _IntroBodyState extends IntroController {
                       (index) => buildDot(index: index),
                     ),
                   ),
+                  Spacer(flex: 1),
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      next();
+                    },
+                    icon: Icon(Icons.navigate_next_rounded),
+                    label: Text("Continue"),
+                  ),
                   Spacer(flex: 3),
                 ],
               ),
