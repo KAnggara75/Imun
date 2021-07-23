@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import './Dashboard.dart';
 import '../config/constants.dart';
 import '../views/intro/index.dart';
@@ -19,6 +20,7 @@ class IntroScreen extends StatelessWidget {
 
 abstract class IntroController extends State<IntroBody> {
   int currentPage = 0;
+  var intro;
   List<Map<String, String>> splashData = [
     {
       "text": "CoVid Live info Apps with Flutter!",
@@ -48,6 +50,14 @@ abstract class IntroController extends State<IntroBody> {
   }
 
   next() {
+    setPref();
     Navigator.pushReplacementNamed(context, DashboardScreen.routeName);
+  }
+
+  setPref() async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    setState(() {
+      preferences.setInt("intro", 1);
+    });
   }
 }
