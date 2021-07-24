@@ -3,7 +3,7 @@ on:
     branches: [main]
     tags:
       - "v*.*.*"
-name: 🚀 Deploy App on push
+name: 🚀 Test App on push
 jobs:
   build:
     runs-on: macos-latest
@@ -19,14 +19,3 @@ jobs:
           channel: "stable"
       - run: flutter pub get
       - run: flutter test
-      - run: flutter build web
-      - run: flutter build apk
-      - run: flutter build ios --release --no-codesign
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: |
-            build/app/outputs/flutter-apk/app-release.apk
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
