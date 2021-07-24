@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import './Dashboard.dart';
+import './Navbar.dart';
 import '../config/constants.dart';
 import '../views/intro/index.dart';
 import '../config/size_config.dart';
@@ -51,7 +51,7 @@ abstract class IntroController extends State<IntroBody> {
 
   next() {
     setPref();
-    Navigator.pushReplacementNamed(context, DashboardScreen.routeName);
+    Navigator.pushReplacementNamed(context, NavigationScreen.routeName);
   }
 
   setPref() async {
