@@ -34,6 +34,10 @@
 | Data vaksinasi COVID-19 di Indonesia                    |           Reynadi            |            [Link](https://vaksincovid19-api.now.sh/)            | `Aktif` | Data vaksinasi COVID-19 hasil scrapping website kemenkes                                                                   | Tidak  |
 | Data ketersediaan tempat tidur rumah sakit di Indonesia |       Satya Wikananda        | [Link](https://github.com/satyawikananda/rs-bed-covid-indo-api) | `aktif` | API ketersediaan rumah sakit dan tempat tidur rumah sakit untuk pasien covid-19 ataupun non-covid yang berada di Indonesia | Tidak  |
 
+## Color Paletts
+
+![Coolors](https://img.shields.io/badge/Color_Palette-Coolors-blue?style=for-the-badge&logo=serverless&link=https://coolors.co/f94144-f3722c-f8961e-f9844a-f9c74f-90be6d-43aa8b-4d908e-577590-277da1&link=https://coolors.co/)
+
 ## License
 
 ![License](https://img.shields.io/badge/License-MIT-blue?logoWidth=80&style=for-the-badge&)
