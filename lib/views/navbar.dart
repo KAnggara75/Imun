@@ -24,7 +24,7 @@ class _NavBarState extends NavBarController {
             color: tap == 0 ? Color(0xFF06b3fa) : Color.fromARGB(255, 0, 0, 0),
           ),
           Icon(
-            Icons.shield,
+            Icons.health_and_safety_sharp,
             size: 30,
             color: tap == 1 ? Color(0xFF06b3fa) : Color.fromARGB(255, 0, 0, 0),
           ),
